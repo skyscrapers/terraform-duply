@@ -1,11 +1,10 @@
 variable "customer" {
-  default = ""
 }
 
 variable "project" {
-  default = ""
+  default = "noproject"
 }
 
 variable "environment" {
-  default = ""
+  default = "noenv"
 }
