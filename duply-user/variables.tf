@@ -1,0 +1,3 @@
+variable "customer" {}
+
+variable "arn" {}
