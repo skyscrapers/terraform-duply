@@ -3,7 +3,7 @@ resource "aws_iam_access_key" "duply" {
 }
 
 resource "aws_iam_user" "duply" {
-  name = "${var.customer}-duply"
+  name = "${join("-", compact(list("${var.customer}", "${var.environment}", "${var.project}", "duply")))}"
   path = "/duply/"
 }
 

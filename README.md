@@ -35,7 +35,9 @@ Create the backup user.
 
 ### Available variables:
  * [`customer`]: String(required): Name of the customer
- * [`arn`]: String(required): The ARN of the bucket that needs to be managed by the backup user.
+ * [`arn`]: String(required): The ARN of the bucket that needs to be managed by the backup user.=
+ * [`project`]: String(optional): The name of the project, default ""
+ * [`environment`]: String(optional): The name of the environment, default "production"
 
 ### Output
  * [`access_key`]: String: The AWS access key for the created backup user
@@ -46,6 +48,7 @@ Create the backup user.
   module "backup_user" {
     source        = "github.com/skyscrapers/terraform-duply//duply-user"
     customer      = "my_customer"
+    environment   = "staging"
     arn           = "${aws_s3_bucket.backup.arn}"
   }
   ```
