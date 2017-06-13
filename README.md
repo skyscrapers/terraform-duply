@@ -65,6 +65,7 @@ Create the bucket and the user in a single go.
 ### Output
  * [`access_key`]: String: The AWS access key for the created backup user
  * [`secret_name`]: String: The name of the ELB
+ * [`arn`]: String: The ARN of the S3 bucket to hold the backups.
 
 ### Example
   ```
