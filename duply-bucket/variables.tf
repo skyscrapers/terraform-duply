@@ -1,4 +1,5 @@
 variable "customer" {
+  type = string
 }
 
 variable "project" {
