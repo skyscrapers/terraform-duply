@@ -1,4 +1,5 @@
 variable "customer" {
+  type = string
 }
 
 variable "environment" {
@@ -10,5 +11,6 @@ variable "project" {
 }
 
 variable "arn" {
+  type = string
 }
 
