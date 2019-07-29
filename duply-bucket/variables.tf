@@ -1,4 +1,5 @@
-variable "customer" {}
+variable "customer" {
+}
 
 variable "project" {
   default = "noproject"
@@ -7,3 +8,4 @@ variable "project" {
 variable "environment" {
   default = "production"
 }
+
