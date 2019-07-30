@@ -1,7 +1,8 @@
 data "template_file" "duply" {
-  template = "${file("${path.module}/templates/duply-policy.tpl")}"
+  template = file("${path.module}/templates/duply-policy.tpl")
 
-  vars {
-    arn = "${var.arn}"
+  vars = {
+    arn = var.arn
   }
 }
+
