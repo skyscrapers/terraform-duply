@@ -4,10 +4,12 @@ variable "customer" {
 
 variable "environment" {
   default = "production"
+  type    = string
 }
 
 variable "project" {
   default = ""
+  type    = string
 }
 
 variable "arn" {
